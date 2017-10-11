@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <!-- React Table -->
+    <link rel="stylesheet" href="../../node_modules/react-table/react-table.css">
+  </head>
+  <body style="user-select:none">
+    <!-- process is just for electron -->
+    <h1>Electron, autoUpdater, Realm, React, React Router, cp-tools, Material-UI, etc...</h1>
+    <!-- All of the Node.js APIs are available in this renderer process. -->
+    We are using Node.js <script>document.write(process.versions.node)</script>,
+    Chromium <script>document.write(process.versions.chrome)</script>,
+    and Electron <script>document.write(process.versions.electron)</script>.
+    <hr/>
+    <div id='reactapp' />
+  </body>
+  <script>
+    // You can also require other files to run in this process
+    // require('./renderer.js')
+    require('./out/bundle.js')
+  </script>
+</html>
